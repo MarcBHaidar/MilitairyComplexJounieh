@@ -4,9 +4,13 @@
     box-sizing: border-box;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@200&display=swap');
 body {
+    font-family: 'Vazirmatn', sans-serif;
+    color: white;
     padding: 10%;
-    background-image: linear-gradient(white, #31bbe7, white);
+    background-color: #0375bc;
+    
 }
 
 /*header container*/
@@ -21,13 +25,11 @@ header {
 
 header>img {
     margin-bottom: 10%;
-
     width: 100%;
     height: auto;
 }
 
 header>h1 {
-    color: #0375bc;
     text-align: center;
     font-size: 24px;
 }
@@ -40,13 +42,14 @@ header>h1 {
     display: grid;
     grid-auto-flow: row;
     grid-auto-columns: 1fr;
-    grid-gap: 3%;
+    grid-gap: 1%;
     width: 100%;
 }
 
 .menu .inside-menu {
 
     border: 1px solid white;
+    border-radius: 5px;
     padding: 5%;
 }
 
@@ -54,18 +57,18 @@ header>h1 {
     list-style: none;
     text-decoration: none;
 }
-.price li {
-    margin-bottom: 4px;
-}
-.typess li {
-    margin-bottom: 4px;
-}
-.prices li {
-    margin-bottom: 5px;
-}
-.pricess li {
-    margin-bottom: 6px;
-}
+    /* .price li {
+        margin-bottom: 4px;
+    }
+    .typess li {
+        margin-bottom: 4px;
+    }
+    .prices li {
+        margin-bottom: 5px;
+    }
+    .pricess li {
+        margin-bottom: 6px;
+    } */
 .flex{
     display: flex;
     flex-direction: row;
@@ -76,6 +79,18 @@ header>h1 {
 }
 .prices{
     text-align: left;
+}
+.copyright{
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.copyright h3 {
+    font-size: 12px;
+}
+.caution{
+    text-align: right;
 }
 
 @media (min-width: 500px) {
